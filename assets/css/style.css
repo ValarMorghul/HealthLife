@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+.container{
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
 
 /* Header */
 .clear{
@@ -42,13 +47,13 @@
 	text-decoration: none;
 	color: black;
 	font-size: 20px;
+	padding: 10px;
 }
 .selected,.menu a:hover{
 	background-color: #39aae1;
 	border-radius: 10px;
 	margin-left: 0px;
 	color: white;
-	padding: 10px;
 }
 .selected a,.menu a:hover{
 	color: white;
@@ -64,6 +69,8 @@
 	height: 800px;
 	width: 100%;
 	background-size: cover;
+	background-position: center;
+	background-position-y: 0px;
 }
 .banner_options{
 	display: flex;
@@ -153,7 +160,7 @@
 	height: 500px;
 }
 .welcome_text_title{
-	padding-top: 50px;
+	padding-top: 30px;
 	text-align: center;
 	align-items: center;
 	max-width: 600px;
@@ -175,7 +182,7 @@
 	text-align: center;
 }
 .contact_form_title{
-	padding-top: 60px;
+	padding-top: 30px;
 	font-size: 40px;
 }
 .contact_form_desc{
@@ -185,8 +192,14 @@
 	padding: 10px;
 }
 .contact_form_desc textarea{
-	padding-left: 100px;
-	text-align: center;
+	text-align: left;
+	padding-left: 4px;
+	padding-top: 4px;
+	font-size: 14px;
+	width: 60%;
+	max-width: 400px;
+	height: 110px;
+	resize: none;
 }
 
 /* home-section 2-end */
@@ -195,78 +208,143 @@
 
 /* our_services */
 .our_services{
-	height: 850px;
+	padding: 30px 0;
 	background-color: #D3D3D3;
+	background-image: url(/HealthLife/assets/images/healthcare-background.jpg); /*IMAGEM DO OVERLAY DO OVERLAY*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed; /*EFEITO PARALLAX*/
+	background-position: center;
+	z-index: 2;
+	position: relative;
 }
+
+.overlay{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(31, 27, 51, 0.5);  /*OPACIDADE DO OVERLAY*/
+}
+
+.our_services .container{
+	position: relative;
+	z-index: 3;
+}
+
 .our_services_title{
-	padding-top: 30px;
-}
-.our_services_desc{
-	padding-top: 5px;
-	padding-bottom: 30px;
-}
-.our_services_title,.our_services_desc{
-	margin: auto;
 	text-align: center;
+	margin: 30px auto 10px auto;
+	color: white;
 	max-width: 600px;
 }
-.our_services_icon1,
-.our_services_icon2,
-.our_services_icon3,
-.our_services_icon4,
-.our_services_icon5,
-.our_services_icon6{
+.our_services_desc{
+	margin: 10px auto;
+	color: white;
+	max-width: 600px;
+	text-align: center;
+}
+.our_services_icon{
 	height: 30px;
 	width: 30px;
 	background-image: url('../icons/cruz.png');
-	background-size: cover;
-	margin: auto;
-}
-.our_services_services,.our_services_services2{
-	display: flex;
-	flex: 1;
-}
-.our_services_service1,
-.our_services_service2,
-.our_services_service3,
-.our_services_service4,
-.our_services_service5,
-.our_services_service6{
-	background-color: white;
-	height: 210px;
-	max-width: 18%;
-	border-radius: 10px;
-	text-align: center;
-	padding-top: 20px;
-	flex: 1;
-	margin: auto;
-	margin-top: 20px;
-}
-.our_services_service4,
-.our_services_service5,
-.our_services_service6{
-	margin-top: 80px;
+	background-size: 100%;
+	margin: 0 auto;
 }
 
-.our_services_service1 h1,
-.our_services_service2 h1,
-.our_services_service3 h1,
-.our_services_service4 h1,
-.our_services_service5 h1,
-.our_services_service6 h1{
+.our_services_services{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	flex-wrap: wrap;
+}
+
+.service-box{
+	height: 260px;
+	width: 25%;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	padding: 19px;
+	border-radius: 20px;
+	margin: 15px 30px;
+}
+
+.service-box h2{
+	margin: 6px 0;
+	font-size: 23px;
+}
+
+.service-box p{
+	margin: 6px 0;
 	font-size: 18px;
 }
-.our_services_service1 p,
-.our_services_service2 p,
-.our_services_service3 p,
-.our_services_service4 p,
-.our_services_service5 p,
-.our_services_service6 p{
-	margin: auto;
-	padding-top: 13px;
-	max-width: 230px;
-}
-
-
 
 /* our_servides-end */
+
+@media screen and (max-width:1120px){
+	.contact_form_title{
+		padding-top: 30px;
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width:840px){
+	.service-box{
+		height: 280px;
+		width: 25%;
+		background-color: white;
+		border: 1px solid black;
+		text-align: center;
+		padding: 19px;
+		border-radius: 20px;
+		margin: 15px 15px;
+	}
+}
+
+@media screen and (max-width:768px){
+	.home_contact{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	.welcome_text{
+		text-align: center;
+		width: 100%;
+		background-color: #DCDCDC;
+		height: 500px;
+	}
+	.contact_form{
+		width: 100%;
+		height: 500px;
+		background-color: #D3D3D3;
+		text-align: center;
+	}
+
+	.service-box{
+		height: 280px;
+		width: 40%;
+		background-color: white;
+		border: 1px solid black;
+		text-align: center;
+		padding: 19px;
+		border-radius: 20px;
+		margin: 15px 15px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.service-box{
+		height: 280px;
+		width: 60%;
+		background-color: white;
+		border: 1px solid black;
+		text-align: center;
+		padding: 19px;
+		border-radius: 20px;
+		margin: 15px 15px;
+	}
+}
