@@ -68,30 +68,50 @@
 	</div>
 </section>
 <section class="our_services">
-	<h1 class="our_services_title">Veja nossos serviços!</h1>
-	<div class="our_services_desc">Aenean vel gravida enim. In sed arcu ligula. Pellentesque pretium mi id ante scelerisque porta. Suspendisse libero sapien, hendrerit vitae massa vel, molestie mollis arcu. Suspendisse odio elit, finibus quis felis sodales, mattis dapibus sem. Maecenas at porttitor neque. Cras ac mi quis purus lobortis pellentesque. Praesent venenatis sagittis ultrices. Integer at varius arcu. Suspendisse aliquet ipsum non orci accumsan, at tincidunt elit malesuada. Morbi consequat lorem id malesuada porta.</div>
-	<div class="our_services_services">
-	<div class="our_services_service1"><div class="our_services_icon1"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-<div class="our_services_service2"><div class="our_services_icon2"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-<div class="our_services_service3"><div class="our_services_icon3"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-</div>
-<div class="our_services_services2">
-	<div class="our_services_service4"><div class="our_services_icon4"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-<div class="our_services_service5"><div class="our_services_icon5"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-<div class="our_services_service6"><div class="our_services_icon6"></div> <h1>Exames de x e y resultados exatos</h1>
-	<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-</div>
-</div>
+	<div class="overlay"></div>
+	<div class="container">
+		<h1 class="our_services_title">Veja nossos serviços!</h1>
+		<p class="our_services_desc">Aenean vel gravida enim. In sed arcu ligula. Pellentesque pretium mi id ante scelerisque porta. Suspendisse libero sapien, hendrerit vitae massa vel, molestie mollis arcu. Suspendisse odio elit, finibus quis felis sodales, mattis dapibus sem. Maecenas at porttitor neque. Cras ac mi quis purus lobortis pellentesque. Praesent venenatis sagittis ultrices. Integer at varius arcu. Suspendisse aliquet ipsum non orci accumsan, at tincidunt elit malesuada. Morbi consequat lorem id malesuada porta.</p>
+		<div class="our_services_services">
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+			
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+
+			<div class="service-box">
+				<div class="our_services_icon"></div>
+				<h2>Exames de X e Y resultados exatos</h2>
+				<p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipiscing velit...</p>
+			</div><!-- service-box -->
+		</div><!-- our_services_services -->
+	</div>
 </section>
+
+<section style="height: 900px;"></section> <!-- TESTE -->
 </body>
 </html>
