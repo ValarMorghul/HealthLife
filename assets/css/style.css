@@ -65,12 +65,12 @@
 
 /* Banner */
 .banner{
-	background-image: url('../images/img1.jpg');
+	background-image: url('../images/Health.jpg');
 	height: 800px;
 	width: 100%;
 	background-size: cover;
 	background-position: center;
-	background-position-y: 0px;
+	background-position-y: -105px;
 }
 .banner_options{
 	display: flex;
@@ -210,7 +210,7 @@
 .our_services{
 	padding: 30px 0;
 	background-color: #D3D3D3;
-	background-image: url(/HealthLife/assets/images/healthcare-background.jpg); /*IMAGEM DO OVERLAY DO OVERLAY*/
+	background-image: url('../images/laboratorio3.jpg'); /*IMAGEM DO OVERLAY DO OVERLAY*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed; /*EFEITO PARALLAX*/
